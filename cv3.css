@@ -1,0 +1,23 @@
+/* grand écran */
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  /* aligne les éléments à end line sur l'axe principal */
+  justify-content: flex-end;
+}
+
+/* écrans moyens */
+@media all and (max-width: 800px) {
+  .navigation {
+  /* centre les éléments en répartissant l'espace entre eux */
+  justify-content: space-around;
+  }
+}
+
+/* petit écran */
+@media all and (max-width: 500px) {
+  .navigation {
+  /* n'utilise plus row mais column */
+  flex-direction: column;
+  }
+}
